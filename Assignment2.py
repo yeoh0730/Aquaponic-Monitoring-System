@@ -6,6 +6,8 @@ from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
 import json
 
+# MongoDB Atlas configuration
+# change the<username> and <password> to your own username and password
 uri = "mongodb+srv://yeoh0730:<password>@cpc357.w0vmwin.mongodb.net/?retryWrites=true&w=majo>
 
 # Create a new client and connect to the server
