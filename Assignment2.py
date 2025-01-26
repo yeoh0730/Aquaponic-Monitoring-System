@@ -8,7 +8,7 @@ import json
 
 # MongoDB Atlas configuration
 # change the<username> and <password> to your own username and password
-uri = "mongodb+srv://yeoh0730:<password>@cpc357.w0vmwin.mongodb.net/?retryWrites=true&w=majo>
+uri = "mongodb+srv://yeoh0730:<password>@cpc357.w0vmwin.mongodb.net/?retryWrites=true&w=majority&appName=CPC357"
 
 # Create a new client and connect to the server
 mongo_client = MongoClient(uri, server_api=ServerApi('1'))
