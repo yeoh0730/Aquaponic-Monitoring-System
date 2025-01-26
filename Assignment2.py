@@ -32,7 +32,7 @@ def on_connect(client, userdata, flags, reason_code, properties):
         client.subscribe(mqtt_topic)
         
         # Move the data publishing inside the on_connect
-        excel_data = pd.read_csv('/home/yeohhueyjing111/pond_iot_2024.csv')  # Adjust your pat>
+        excel_data = pd.read_csv('/home/yeohhueyjing111/pond_iot_2024.csv')  # Adjust your path
         for index, row in excel_data.iterrows():
             message = row.to_json()
             print("Publishing: ", message)  # Debug print
