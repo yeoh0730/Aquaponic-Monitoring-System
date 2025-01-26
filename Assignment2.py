@@ -21,11 +21,11 @@ except Exception as e:
     print(e)
 
 db = mongo_client["aquaponicfishpond"]
-collection = db["fishpond"]
+collection = db["iot"]
 
 # MQTT configuration
 mqtt_broker_address = "34.55.198.79"  # Replace with your VM instance external IP
-mqtt_topic = "fishpond"
+mqtt_topic = "iot"
 
 # Define the callback function for connection
 def on_connect(client, userdata, flags, reason_code, properties):
